@@ -1,0 +1,26 @@
+---
+- name: module apt demo
+  hosts: localhost
+  become: true
+  tasks: 
+    - name: install package
+      apt:
+        pkg:
+          - htop
+          - tmux
+          - neovim
+          - i3
+          - i3status
+          - picom
+          - feh
+          - kitty
+          - dmenu
+          - ranger
+          - python3
+          - vlc
+          - unzip
+          - neofetch
+          - texlive
+          - ntp
+        state: present
+        update_cache: true
