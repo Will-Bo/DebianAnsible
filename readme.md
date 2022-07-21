@@ -17,4 +17,5 @@ The script does three main things:
 
 ## Rationale
 I found myself reinstalling my previous distros (particularly Void Linux and Artix) many times on many machines and trying to hack together a shell script to configure automatic setup, but to no avail. I finally decided to switch back to Debian, which I had used before my jump to Void, as my primary Linux distro. While this method still involves a shell script, I hope that the use of a prebaked XFCE base as well as the use of Ansible will make maintaining this deployment method more viable. 
+
 None of my configurations are particularly interesting or unique, but I hope that these resources may be useful to others who are looking to mass-deploy a fairly standard environment as I am. 
