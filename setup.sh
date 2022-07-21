@@ -21,10 +21,5 @@ cp .vimrc ~/.vimrc
 mkdir -p ~/.config/nvim/
 ln -s ~/.vimrc ~/.config/nvim/init.vim
 
-## No longer using pipewire
-#echo "pipewire&" >> ~/.xinitrc
-#echo "wireplumber&" >> ~/.xinitrc
-#echo "exec /bin/i3" >> ~/.xinitrc
-
 ## Copying mouse acceleration profile (no acceleration) into X11 settings
 sudo cp 50-mouse-acceleration.conf /etc/X11/xorg.conf.d/50-mouse-acceleration.conf
