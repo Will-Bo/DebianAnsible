@@ -22,5 +22,6 @@
           - neofetch
           - texlive
           - ntp
+          - ncal
         state: present
         update_cache: true
