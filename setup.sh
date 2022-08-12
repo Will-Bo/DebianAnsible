@@ -18,3 +18,6 @@ sudo systemctl enable ntp
 
 ## Link NeoVim config with Vim config
 ln -s ~/.vimrc ~/.config/nvim/init.vim
+
+## Disable terminal bell
+echo "set bell-style none" >> /etc/inputrc 
