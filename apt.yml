@@ -23,5 +23,6 @@
           - texlive
           - ntp
           - ncal
+          - mupdf
         state: present
         update_cache: true
