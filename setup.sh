@@ -21,3 +21,7 @@ ln -s ~/.vimrc ~/.config/nvim/init.vim
 
 ## Disable terminal bell
 echo "set bell-style none" >> /etc/inputrc 
+
+## Upgrade to Debian Sid
+sudo echo "deb http://deb.debian.org/debian/ unstable main contrib non-free" > /etc/apt/sources.list
+sudo echo "deb-src http://deb.debian.org/debian/ unstable main contrib non-free" >> /etc/apt/sources.list

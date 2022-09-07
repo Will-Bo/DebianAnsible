@@ -1,7 +1,6 @@
 ---
 - name: module apt demo
   hosts: localhost
-  become: true
   tasks: 
     - name: install package
       apt:
@@ -26,3 +25,4 @@
           - mupdf
         state: present
         update_cache: true
+      become: true
