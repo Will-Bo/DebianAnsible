@@ -2,4 +2,4 @@
 Using my Ansible Debian deployment script to automatically deploy Arch Linux systems.
 
 ## Usage
-If using Artix (as I am), run the artix.sh script first, then the setup.sh script.
+Just run the `setup.sh` script (type `chmod +x setup.sh; ./setup.sh` in your terminal). You'll be prompted if you're running Artix, but the script assumes that you're using Artix with runit. 
