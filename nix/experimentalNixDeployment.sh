@@ -21,7 +21,36 @@ nix-env -iA nixpkgs.helix \
     nixpkgs.dmenu \
     nixpkgs.picom \
     nixpkgs.kitty \
-    nixpkgs.ranger 
+    nixpkgs.ranger \
+    nixpkgs.anki \
+    nixpkgs.calibre \
+    nixpkgs.ffmpeg \
+    nixpkgs.pandoc \
+    nixpkgs.clementine \
+    nixpkgs.libsForQt5.soundkonverter \
+    nixpkgs.yt-dlp \
+    nixpkgs.transmission \
+    nixpkgs.mupdf
 
 echo 'theme="monokai"' >> ~/.config/helix/config.toml
+
+
+## Ensuring that all folders necessary for configurations are present
+mkdir -p ~/.config/i3
+mkdir ~/.config/picom
+mkdir ~/Pictures
+mkdir -p ~/.config/nvim/
+
+## Copying configuration files
+cp ../i3/config ~/.config/i3/config
+cp ../picom/picom.conf ~/.config/picom/picom.conf
+cp ../bg.png ~/Pictures/bg.png
+cp ../50-mouse-acceleration.conf /etc/X11/xorg.conf.d/50-mouse-acceleration.conf
+cp ../.vimrc ~/.vimrc
+
+## Link NeoVim config with Vim config
+ln -s ~/.vimrc ~/.config/nvim/init.vim
+
+## Disable terminal bell
+echo "set bell-style none" >> /etc/inputrc 
 
