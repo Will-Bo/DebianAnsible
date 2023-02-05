@@ -30,7 +30,8 @@ nix-env -iA nixpkgs.helix \
     nixpkgs.libsForQt5.soundkonverter \
     nixpkgs.yt-dlp \
     nixpkgs.transmission \
-    nixpkgs.mupdf
+    nixpkgs.mupdf \
+    nixpkgs.mesa
 
 echo 'theme="monokai"' >> ~/.config/helix/config.toml
 
