@@ -31,7 +31,9 @@ nix-env -iA nixpkgs.helix \
     nixpkgs.yt-dlp \
     nixpkgs.transmission \
     nixpkgs.mupdf \
-    nixpkgs.mesa
+    ## mesa is hopefully unnecessary, most systems come with this installed already
+#    nixpkgs.mesa \
+    nixpkgs.maim
 
 echo 'theme="monokai"' >> ~/.config/helix/config.toml
 
