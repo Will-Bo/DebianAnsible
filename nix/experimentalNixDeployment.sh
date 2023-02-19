@@ -8,9 +8,12 @@ nix-channel --update
 nix-env -u '*'
 
 nix-env -iA nixpkgs.helix \
+    ## Lots of text editors to choose from
     nixpkgs.kakoune \
     nixpkgs.git \
     nixpkgs.neovim \
+    ## DEs
+    nixpkgs.hyprland \
     nixpkgs.i3 \
     nixpkgs.feh \
     nixpkgs.texlive.combined.scheme-full \
@@ -34,8 +37,11 @@ nix-env -iA nixpkgs.helix \
     ## mesa is hopefully unnecessary, most systems come with this installed already
 #    nixpkgs.mesa \
     nixpkgs.maim \
+    ## VSCodium for development
     nixpkgs.vscodium \
-    nixpkgs.hyprland
+    ## for c# development
+    nixpkgs.dotnet-sdk \
+    nixpkgs.dotnet-aspnetcore
     
 
 echo 'theme="monokai"' >> ~/.config/helix/config.toml
