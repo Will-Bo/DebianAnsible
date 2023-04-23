@@ -11,6 +11,7 @@ lsp.ensure_installed({
 	'clangd',
 --	'rust-analyzer',
 	'svlangserver',
+--    'python-lsp-server'
 })
 
 lsp.preset('recommended')
