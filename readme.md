@@ -2,6 +2,7 @@
 This is a simple (work-in-progress) Ansible playbook and shell script that I use to configure my new Debian systems!
 
 ## Requirements
+TODO: Update description -- Arch config!
 Install Debian 11. This script has been tested with Debian 11 XFCE edition, which I find to be an excellent base on which to deploy alternate desktop environments. However, the only real expectation for the base system is that it already has NetworkManager installed. 
 
 Please ensure that Ansible is installed on your system. 
@@ -10,6 +11,7 @@ Please ensure that Ansible is installed on your system.
 `sudo apt install ansible` will install Ansible on your system. 
 
 ## Use
+TODO: Update instructions for use on different distros
 On an existing Debian XFCE (or other Debian-based) system, clone this repository, `cd` into it, and run the setup script with `./setup.sh`. 
 The script does three main things:
 1. Install packages using Ansible
