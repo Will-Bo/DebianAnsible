@@ -1,0 +1,28 @@
+---
+- name: module pacman demo
+  hosts: localhost
+  tasks: 
+    - name: install packages
+      community.general.pacman:
+        name:
+          - htop
+          - tmux
+          - neovim
+          - i3
+          - i3status
+          - picom
+          - feh
+          - kitty
+          - dmenu
+          - ranger
+          - python3
+          - vlc
+          - unzip
+          - neofetch
+          - texlive
+          - ntp
+          - ncal
+          - mupdf
+        state: present
+        update_cache: true
+      become: true

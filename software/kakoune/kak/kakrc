@@ -1,0 +1,5 @@
+colorscheme monokai
+#set global indentwidth 4
+map global insert <tab> '<a-;><a-gt>'
+
+map global insert <s-tab> '<a-;><a-lt>'
