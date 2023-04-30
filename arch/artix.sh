@@ -18,8 +18,3 @@ echo "[universe]
   Server = https://mirror1.cl.netactuate.com/artix/universe/$arch
   Server = https://ftp.crifo.org/artix-universe/">> /etc/pacman.conf
 
-# Install `paru` AUR helper
-sudo pacman -S --needed base-devel
-git clone https://aur.archlinux.org/paru.git
-cd paru
-makepkg -si

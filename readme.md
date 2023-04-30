@@ -11,7 +11,7 @@ Please ensure that Ansible is installed on your system.
 `sudo apt install ansible` will install Ansible on your system. 
 
 ## Use
-TODO: Update instructions for use on different distros
+TODO: Update instructions for use on different distros -- run desired setups, then run playbooks
 On an existing Debian XFCE (or other Debian-based) system, clone this repository, `cd` into it, and run the setup script with `./setup.sh`. 
 The script does three main things:
 1. Install packages using Ansible
