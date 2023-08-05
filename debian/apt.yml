@@ -23,6 +23,7 @@
           - ncal
           - mupdf
           - sway
+          - yt-dlp
         state: present
         update_cache: true
       become: true
