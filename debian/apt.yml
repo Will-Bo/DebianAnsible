@@ -23,6 +23,7 @@
           - ntp
           - ncal
           - mupdf
+          - sway
         state: present
         update_cache: true
       become: true

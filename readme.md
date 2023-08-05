@@ -3,7 +3,7 @@ This is a simple (work-in-progress) Ansible playbook and shell script that I use
 
 ## Requirements
 TODO: Update description -- Arch config!
-Install Debian 11. This script has been tested with Debian 11 XFCE edition, which I find to be an excellent base on which to deploy alternate desktop environments. However, the only real expectation for the base system is that it already has NetworkManager installed. 
+Install Debian 12. This script has been tested with Debian 12 XFCE edition, which I find to be an excellent base on which to deploy alternate desktop environments. However, the only real expectation for the base system is that it already has NetworkManager installed. 
 
 Please ensure that Ansible is installed on your system. 
 `ansible --version` will tell you your Ansible version if it is installed. This script has been tested on version 2.10.8 on Debian 11. 

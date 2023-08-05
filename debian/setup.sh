@@ -5,6 +5,7 @@ mkdir -p ~/.config/i3
 mkdir ~/.config/picom
 mkdir ~/Pictures
 mkdir -p ~/.config/nvim/
+mkdir ~/.config/sway
 
 ## Enabling clock services
 sudo systemctl start ntp
