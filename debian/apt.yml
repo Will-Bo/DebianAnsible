@@ -7,7 +7,6 @@
         pkg:
           - htop
           - tmux
-          - neovim
           - i3
           - i3status
           - picom
