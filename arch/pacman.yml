@@ -18,10 +18,16 @@
         - vlc
         - unzip
         - neofetch
-        - texlive-most
-        - ntp
-          #        - ncal
+        - texlive
         - mupdf
+        - bemenu
+        - sway
+        - swaybg
+        - xorg-xwayland
+        - brightnessctl
+        - pavucontrol
+        - thunar
+        - lf
       state: present
       update_cache: true
         #      become: true
