@@ -15,17 +15,6 @@ mkdir ~/.config/picom
 mkdir ~/Pictures
 mkdir -p ~/.config/nvim/
 
-## Installing packages
-# sudo ansible-playbook apt.yml
-sudo ./packages.sh
-
-## Copying configuration files
-cp ../i3/config ~/.config/i3/config
-cp ../picom/picom.conf ~/.config/picom/picom.conf
-cp ../bg.png ~/Pictures/bg.png
-cp ../50-mouse-acceleration.conf /etc/X11/xorg.conf.d/50-mouse-acceleration.conf
-cp ../.vimrc ~/.vimrc
-
 ## Enabling clock services
 if $artixval = "y" || $artixval = "Y"
 then
@@ -36,10 +25,15 @@ else
     sudo systemctl enable ntp
 fi
 
-## Link NeoVim config with Vim config
-ln -s ~/.vimrc ~/.config/nvim/init.vim
+## Installing Paru AUR helper
+git clone https://aur.archlinux.org/paru.git
+cd paru
+makepkg -si
+cd ..
 
 ## Disable terminal bell
 echo "set bell-style none" >> /etc/inputrc 
 
 echo "remember to run rankmirrors /etc/pacman.d/mirrorlist and copy the results of the test to get the fastest mirrors!"
+
+echo "Also remember to install ansible and run `ansible-galaxy collection install community.general`"

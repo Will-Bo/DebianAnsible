@@ -1,0 +1,33 @@
+---
+- hosts: localhost
+  tasks: 
+  - name: module pacman demo.
+    community.general.pacman:
+      name:
+        - htop
+        - tmux
+        - neovim
+        - i3
+        - i3status
+        - picom
+        - feh
+        - kitty
+        - dmenu
+        - ranger
+        - python3
+        - vlc
+        - unzip
+        - neofetch
+        - texlive
+        - mupdf
+        - bemenu
+        - sway
+        - swaybg
+        - xorg-xwayland
+        - brightnessctl
+        - pavucontrol
+        - thunar
+        - lf
+      state: present
+      update_cache: true
+        #      become: true

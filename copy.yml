@@ -4,17 +4,21 @@
   tasks:
     - name: Copy i3 config
       copy: 
-        src: i3/config
+        src: software/i3/config
         dest: ~/.config/i3
       copy:
-        src: picom/picom.conf
+        src: software/picom/picom.conf
         dest: ~/.config/picom/picom.conf
       copy:
         src: bg.png
         dest: ~/Pictures/bg.png
       copy:
-        src: 50-mouse-acceleration.conf
+        src: software/50-mouse-acceleration.conf
         dest: /etc/X11/xorg.conf.d/50-mouse-acceleration.conf
+    - name: Copy vim config
       copy: 
         src: .vimrc
         dest: ~/.vimrc
+    - name: Copy sway config
+        src: ./software/sway/config
+        dest: ~/.config/sway/config
